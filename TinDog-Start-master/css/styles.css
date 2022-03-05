@@ -1,0 +1,228 @@
+/* using the #Title to change colour for font for  convinience rather than targetting particular <hr> for colour change */
+#title {
+  position: relative;
+  z-index: 1;
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.Logo {
+  padding-top: 4.5rem;
+  font-size: 3.5rem;
+  text-align: left
+}
+
+.download-but1 {
+  padding-top: 3.125rem;
+  text-align: left;
+}
+
+.fab {
+  margin-right: 5px;
+}
+
+.nav-item {
+  font-size: 20px;
+  position: relative;
+  left: 72px;
+}
+
+/******************************** IPHONE IMAGE  **********************************/
+.image-iphone {
+
+
+/* We used z-index Feature to hide the iphone image behind the feature section (White) z-index: 100 [High priority] z-index: -100 [Lowest priority]
+
+se Z-index angeslas video and follow notes of copy for more clarity */
+
+  z-index:2;
+  top: 40px;
+  position: relative;
+  left: 30px;
+  width: 55%;
+  transform: rotate(20deg);
+}
+
+/* Features container  */
+#features {
+  margin-top: -90px;
+
+  background-color: white;
+  position: relative;
+  z-index: 3;
+  padding: 7% 15%;
+}
+
+/* **********************FONT-AWSOME-ICON******************************** */
+/* changing font-awsome icons  */
+.fas {
+  margin-bottom: 1rem;
+  /* Can use both (fa-4x) to sizeup the font awsome or use the rem to specifiy the value  */
+  font-size: 3rem;
+  color: #ef8172;
+}
+
+/* font-awesome icon  colour changing on Hovering the button  */
+.fas:hover {
+  color: #ff4c68
+}
+
+/* To make the Features - centered-aligned and more readable and accomodated we used line height [VERY IMPORTANT]  */
+.row {
+  text-align: center;
+}
+
+.h3-features {
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+.features-para {
+  color: #8f8f8f
+}
+
+/* *********************Testimonial sectiopn************************ */
+/* Here testimonials ID is the Mother container [IDs are always used in mother container] */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: white;
+}
+
+.Testimonials-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonials-image {
+  margin: 20px;
+  width: 10%;
+  border-radius: 50%;
+}
+
+/* ***************************Credits and Sponsors and the Exposure section************************ */
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-imgs {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* We removed padding form the ID mother container , because the buttons (Carousel) is block elements and can take place of
+padding in ID selector [Testimonials] to make it more beautiful and accesible */
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* ********************************pricing section*********************** */
+#pricing {
+  padding: 6.25rem;
+  text-align: center;
+}
+
+.pricingh3-card-head {
+  font-weight: 900;
+}
+
+.pricingh3-heading {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.subscript-price {
+  font-weight: 900;
+}
+
+.card-contents{
+  color: #8f8f8f;
+}
+
+.pricing-subtitle{
+  margin-bottom: 33px;
+}
+.pricing-column{
+  padding: 0 2%;
+
+}
+
+/* WE USED MEDIA QUERY TO CHANGE THE PICTURE ACOORDING TO THE WIDTH [same like if-else]  SO THE IMAGE REMAIN UPRIGHT AND STATIC IN MOBILE VIEWPOINT*/
+
+@media (max-width:1028px){
+
+  .image-iphone {
+    position: static;
+    transform: rotate(0deg);
+    padding-bottom: 77px;
+  }
+
+.Logo{
+  text-align: center;
+}
+.download-but1{
+  text-align: center;
+}
+}
+
+
+ /* CONCLUSION ENDING OF Woofila */
+
+ #cta {
+   background-color: #ff4c68;
+   padding: 7% 15%;
+   text-align: center;
+ }
+
+ .conclusion-headline{
+
+   line-height: 5.6rem;
+   font-size: 3.6rem;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+ }
+
+.apple-button{
+  margin-right : 22px;
+}
+.apple-buttonfont{
+  padding-right: 3px;
+}
+
+.buttons{
+  margin-top: 2.6rem;
+}
+
+/* *******************RIGHTS AND FOOTER ENDING************************************ */
+
+#footer{
+  text-align: center;
+  margin: 7% 15%;
+}
+.footer-envelope{
+  color:  black;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right:15px;
+}
+.footer-facebook{
+  padding-left: 15px;
+  padding-right:15px;
+}
+.socials-footer{
+  margin-bottom: 15px;
+}
+.paragraph-footer{
+  color: #8f8f8f;
+}
